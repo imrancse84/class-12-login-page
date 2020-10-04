@@ -12,7 +12,7 @@
     <title>Sign-up from</title>
   </head>
   <body>
-    <section class="container   col-xl-4 justify-content-center">
+    <section class="container   col-xl-6 justify-content-center">
       <div class="sign-up">
       
       <div class="row shadow p-5 mb-5 rounded">
@@ -23,22 +23,98 @@
           <h6 class="text-center my-4"><span>OR</span></h6>
         </div>
         
-        <form>
-        <div class="mb-3">
+        <form class="row">
+          <div class="col-xl-6 mb-2">
+            <label for="fname">First Name</label>
+            <input  type="text" class="form-control" id="fname">
+          </div>
+
+          <div class="col-xl-6 mb-2">
+            <label for="lname">Last Name</label>
+            <input  type="text" class="form-control" id="lname">
+          </div>
+
+        <div class="col-xl-12 mb-2">
           <label for="exampleInputEmail1" class="form-label">Email address</label>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
           <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
-        <div class="mb-3">
+        <div class="col-xl-6 mb-2">
           <label for="exampleInputPassword1" class="form-label">Password</label>
           <input type="password" class="form-control" id="exampleInputPassword1">
         </div>
+
+        <div class="col-xl-6 mb-2">
+          <label for="exampleInputPassword2" class="form-label">Confirm Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword2">
+        </div>
+
+        <div class="col-xl-12 mb-3">
+          <label for="aboutyour" class="form-label">About Yourself...</label>
+          <textarea class="form-control" rows="6" id="aboutyour"></textarea>
+        </div>
+        <div class="col-xl-12 mb-3">
+          <select class="form-control">
+            <option>--- Select Your Country ---</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="USA">USA</option>
+            <option value="India">India</option>
+            <option value="Asia">Asia</option>
+            <option value="Germany">Germany</option>
+            <option value="China">China</option>
+            <option value="Japan">Japan</option>
+            <option value="Bhutan">Bhutan</option>
+          </select>
+        </div>
+
+        <div class="col-xl-12 mb-3">
+          <strong>Select Your Gender:</strong> <br>
+
+          <input class="form-check-input" type="radio" id="male" value="male" name="gender">
+          <label for="male">Male</label>
+
+          <input class="form-check-input" type="radio" id="female" value="female" name="gender">
+          <label for="female">Female</label>
+
+          <input class="form-check-input" type="radio" id="other" value="other" name="gender">
+          <label for="other">Other</label>
+        </div>
+
+        <div class="col-xl-12 mb-3">
+          <strong>Select Your Option:</strong> <br>
+          <div class="fromcheck">
+            <input class="form-check-input" type="checkbox" id="wd" name="option" value="web design">
+          <label for="wd">Web Design</label>
+          </div>
+          
+          <div class="fromcheck">
+            <input class="form-check-input" type="checkbox" id="gd" name="option" value="graphic design">
+          <label for="gd">Graphic Design</label>
+          </div>
+          
+          <div class="fromcheck">
+            <input class="form-check-input" type="checkbox" id="dm" name="option" value="digital marketing">
+          <label for="dm">Digital Marketing</label>
+          </div>
+        </div>
+
+        <div class="col-xl-12 mb-3">
+          <div class="from-file">
+            <input type="file" class="from-file-input" id="customFile">
+          </div>
+          </div>
+
+          <div class="col-xl-12 mb-3">
+            <input type="submit" value="Upload File" class="btn btn-primary">
+            </div>
+
         <div class="mb-3 form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">I agree to the Freelancer <a href="#">User Agreement</a> and <a href="#">Privacy Policy</a>.</label>
         </div>
         <button type="submit" class="btn btn-primary d-block w-100">Join Freelancer</button>
       </form>
+
       <p class="text-center my-4">Already have an account? <a href="index.html">Log in</a></p>
         
       </div>
